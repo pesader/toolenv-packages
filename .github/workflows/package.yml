@@ -74,7 +74,7 @@ jobs:
 
       - name: Build the RPM package
         run: |
-          rpmbuild -bb "$(rpm --eval '%{_sourcedir}')toolenv.spec"
+          rpmbuild -bb "$(rpm --eval '%{_sourcedir}')/toolenv.spec"
 
       - name: Set RPM package path variable
         run: |
