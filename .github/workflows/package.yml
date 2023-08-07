@@ -83,5 +83,5 @@ jobs:
       - name: Upload the RPM package
         uses: actions/upload-artifact@v3
         with:
-          name: toolenv-${{ matrix.fedora-version }}-package
+          name: ${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}-1.fc${{ matrix.fedora-version }}.noarch.rpm
           path: ${{ env.PACKAGE_PATH }}
