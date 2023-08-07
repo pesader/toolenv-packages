@@ -19,6 +19,7 @@ jobs:
         with:
           repository: pesader/toolenv
           ref: ${{ env.PACKAGE_VERSION }}
+          fetch-depth: 0
 
       - name: Make the sources directory
         run: |
