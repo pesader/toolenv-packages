@@ -78,7 +78,7 @@ jobs:
 
       - name: Set RPM package path variable
         run: |
-          echo "PACKAGE_PATH=$(rpm --eval '%{_rpmdir}')/${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}-1.fc${{ matrix.fedora-version }}.noarch.rpm" >> $GITHUB_ENV
+          echo "PACKAGE_PATH=$(rpm --eval '%{_rpmdir}')/noarch/${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}-1.fc${{ matrix.fedora-version }}.noarch.rpm" >> $GITHUB_ENV
 
       - name: Upload the RPM package
         uses: actions/upload-artifact@v3
