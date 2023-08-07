@@ -29,7 +29,7 @@ jobs:
 
       - name: Compress the sources directory into a tarball
         run: |
-          tar --create --file "${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}.tar.gz" "${{ env.PACKAGE_NAME }}-${{ env.TOOLENV_VERSION }}"
+          tar --create --file "${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}.tar.gz" "${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}"
 
       - name: Upload the tarball
         uses: actions/upload-artifact@v3
