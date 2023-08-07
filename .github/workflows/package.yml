@@ -17,7 +17,7 @@ jobs:
       - name: Checkout the toolenv repository
         uses: actions/checkout@v3
         with:
-          name: pesader/toolenv
+          repository: pesader/toolenv
           ref: ${{ env.PACKAGE_VERSION }}
 
       - name: Make the sources directory
