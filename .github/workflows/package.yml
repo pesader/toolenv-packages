@@ -85,3 +85,8 @@ jobs:
         with:
           name: ${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}-1.fc${{ matrix.fedora-version }}.noarch.rpm
           path: ${{ env.PACKAGE_PATH }}
+
+      - name: Release the RPM package
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ env.PACKAGE_PATH }}
