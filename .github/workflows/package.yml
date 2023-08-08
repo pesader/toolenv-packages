@@ -89,4 +89,5 @@ jobs:
       - name: Release the RPM package
         uses: softprops/action-gh-release@v1
         with:
+          if: startsWith(github.ref, 'refs/tags/')
           files: ${{ env.PACKAGE_PATH }}
