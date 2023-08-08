@@ -62,7 +62,7 @@ jobs:
       - name: Download toolenv tarball
         uses: actions/download-artifact@v3
         with:
-          name: toolenv-tarball
+          name: ${{ env.PACKAGE_NAME }}-${{ env.PACKAGE_VERSION }}.tar.gz
 
       - name: Move tarball to SOURCES directory
         run: |
