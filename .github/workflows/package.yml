@@ -1,7 +1,7 @@
 name: Build RPM packages for toolenv
 
 permissions:
-  content: write
+  contents: write
 
 on:
   push:
