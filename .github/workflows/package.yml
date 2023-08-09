@@ -97,3 +97,5 @@ jobs:
           name: Toolenv ${{ env.PACKAGE_VERSION }}
           body: The latest version of the program
           files: ${{ env.PACKAGE_PATH }}
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
