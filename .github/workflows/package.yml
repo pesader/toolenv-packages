@@ -1,5 +1,8 @@
 name: Build RPM packages for toolenv
 
+permissions:
+  content: write
+
 on:
   push:
   workflow_dispatch:
