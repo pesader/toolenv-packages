@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  PACKAGE_VERSION: 0.1.0
+  PACKAGE_VERSION: 0.1.1
   PACKAGE_NAME: toolenv
 
 jobs:
