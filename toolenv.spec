@@ -7,7 +7,7 @@ BuildArch:      noarch
 License:        GPLv3
 Source0:        %{name}-%{version}.tar.gz
 
-Requires:       toolbox, bash, zsh (optional)
+Requires:       toolbox, bash
 
 %description
 
